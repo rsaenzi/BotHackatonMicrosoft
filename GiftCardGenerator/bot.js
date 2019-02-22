@@ -20,6 +20,19 @@ const CARDS = [
 ];
 
 /**
+ * This array will have all the messages from the main conversation
+ */
+const mainConversation = [
+    "Hello there! My name is Neko",
+    "I love helping people to be happy!",
+    "I love birthdays, christmas and all kind of celebrations!",
+    "If you want, I can help you to create a awesome card!",
+    ""
+];
+
+var mainIndex = 0;
+
+/**
  * A bot that sends AdaptiveCards to the user when it receives a message.
  */
 class AdaptiveCardsBot {
@@ -30,6 +43,12 @@ class AdaptiveCardsBot {
      * @param turnContext A TurnContext instance containing all the data needed for processing this conversation turn.
      */
     async onTurn(context) {
+
+        context.sendActivity(mainConversation[mainIndex]);
+        mainIndex++;
+        return;
+
+        /*
         // See https://aka.ms/about-bot-activity-message to learn more about the message and other activity types.
         if (context.activity.type === 'message') {
             const randomlySelectedCard = CARDS[Math.floor((Math.random() * CARDS.length - 1) + 1)];
@@ -40,6 +59,7 @@ class AdaptiveCardsBot {
         } else {
             await context.sendActivity(`[${ context.activity.type } event detected]`);
         }
+        */
     }
 }
 

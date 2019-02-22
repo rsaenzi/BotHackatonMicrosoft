@@ -11,5 +11,4 @@ Please choose which card do you want to create:
 4. San Valentine's day
 5. Graduation
 
-
 Please enter the number according to the selection you want
