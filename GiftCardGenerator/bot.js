@@ -26,8 +26,19 @@ const mainConversation = [
     "Hello there! My name is Neko",
     "I love helping people to be happy!",
     "I love birthdays, christmas and all kind of celebrations!",
-    "If you want, I can help you to create a awesome card!",
-    ""
+    "If you want, I can help you to create a awesome card for your loved ones!",
+    "Please choose which card do you want to create: \n  > 1. Christmas \n > 2. New Year's eve \n > 3. Birthday \n > 4. San Valentine's day \n > 5. Graduation",
+    "You have selected 'New Year's Eve, great!",
+    "I need some data to put in the card...",
+    "What is the name of your loved one?",
+    "ohh 'Carolina', nice!",
+    "what is the age of your loved one?",
+    "ohh '25' years old, got it!",
+    "Thinking....",
+    "Eureka! Inspiration has reached me! Here is your card:",
+    "I hope you can enjoy it!",
+    "thinking to much... now I'm gonna sleep... bye!",
+    "Sleeping..."
 ];
 
 var mainIndex = 0;
@@ -47,19 +58,27 @@ class AdaptiveCardsBot {
         context.sendActivity(mainConversation[mainIndex]);
         mainIndex++;
         
+        if(mainIndex == 13) {
+
+            // Show the gift card
+            if (context.activity.type === 'message') {
+                console.log(JSON.stringify(context.activity));
+                const randomlySelectedCard = CARDS[1];
+                await context.sendActivity({
+                    text: 'Here is an Adaptive Card:',
+                    attachments: [CardFactory.adaptiveCard(randomlySelectedCard)]
+                });
+            } else {
+                //await context.sendActivity(`[${ context.activity.type } event detected]`);
+            }
+            return;
+
+        } else {
+            return;
+        }
 
         
-        // See https://aka.ms/about-bot-activity-message to learn more about the message and other activity types.
-        if (context.activity.type === 'message') {
-            console.log(JSON.stringify(context.activity));
-            const randomlySelectedCard = CARDS[1];
-            await context.sendActivity({
-                text: 'Here is an Adaptive Card:',
-                attachments: [CardFactory.adaptiveCard(randomlySelectedCard)]
-            });
-        } else {
-            await context.sendActivity(`[${ context.activity.type } event detected]`);
-        }
+
         
     }
 }
