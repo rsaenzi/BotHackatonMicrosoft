@@ -1,0 +1,15 @@
+Hello there! My name is Neko
+I love helping people be happy!
+I love birthdays, christmas and all kind of celebrations!
+
+If you want, I can help you to create a awesome card!
+
+Please choose which card do you want to create:
+1. Christmas
+2. New Year's eve
+3. Birthday
+4. San Valentine's day
+5. Graduation
+
+
+Please enter the number according to the selection you want
