@@ -32,13 +32,17 @@ const mainConversation = [
     "I need some data to put in the card...",
     "What is the name of your loved one?",
     "ohh 'Carolina', nice!",
-    "what is the age of your loved one?",
-    "ohh '25' years old, got it!",
     "Thinking....",
     "Eureka! Inspiration has reached me! Here is your card:",
     "I hope you can enjoy it!",
     "thinking to much... now I'm gonna sleep... bye!",
-    "Sleeping..."
+    "Sleeping...",
+    "",
+    "",
+    "Hey! I am sleeping!!! do not bother me!",
+    "",
+    "",
+    ""
 ];
 
 var mainIndex = 0;
@@ -58,7 +62,7 @@ class AdaptiveCardsBot {
         context.sendActivity(mainConversation[mainIndex]);
         mainIndex++;
         
-        if(mainIndex == 13) {
+        if(mainIndex == 11) {
 
             // Show the gift card
             if (context.activity.type === 'message') {
