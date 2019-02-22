@@ -1,0 +1,42 @@
+{
+    "type": "AdaptiveCard",
+    "backgroundImage": "http://messagecardplayground.azurewebsites.net/assets/Mostly%20Cloudy-Background-Dark.jpg",
+    "body": [
+        {
+            "type": "ColumnSet",
+            "columns": [
+                {
+                    "type": "Column",
+                    "items": [
+                        {
+                            "type": "Image",
+                            "url": "https://dibujosparacolorear.eu/wp-content/uploads/2018/07/Merry-Christmas.jpg",
+                            "size": "Stretch"
+                        }
+                    ],
+                    "width": 35
+                },
+                {
+                    "type": "Column",
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "size": "Large",
+                            "weight": "Bolder",
+                            "color": "Light",
+                            "text": "Merry Christmas Ramiro"
+                        }
+                    ],
+                    "width": 65
+                }
+            ]
+        },
+        {
+            "type": "Image",
+            "url": "https://estaticos.muyinteresante.es/media/cache/1140x_thumb/uploads/images/gallery/584eb6e95cafe885c4415f12/navidad0.jpg"
+        }
+    ],
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "version": "1.0",
+    "speak": "<s>Weather forecast for Monday is high of 62 and low of 42 degrees with a 20% chance of rain</s><s>Winds will be 5 mph from the northeast</s>"
+}

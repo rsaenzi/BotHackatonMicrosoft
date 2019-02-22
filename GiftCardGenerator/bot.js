@@ -4,11 +4,11 @@
 const { CardFactory } = require('botbuilder');
 
 // Import AdaptiveCard content.
-const FlightItineraryCard = require('./resources/FlightItineraryCard.json');
-const ImageGalleryCard = require('./resources/ImageGalleryCard.json');
-const LargeWeatherCard = require('./resources/LargeWeatherCard.json');
-const RestaurantCard = require('./resources/RestaurantCard.json');
-const SolitaireCard = require('./resources/SolitaireCard.json');
+const FlightItineraryCard = require('./resources/navidad.json');
+const ImageGalleryCard = require('./resources/newyear.json');
+const LargeWeatherCard = require('./resources/birthday.json');
+const RestaurantCard = require('./resources/graduation.json');
+const SolitaireCard = require('./resources/valentine.json');
 
 // Create array of AdaptiveCard content, this will be used to send a random card to the user.
 const CARDS = [
@@ -46,12 +46,13 @@ class AdaptiveCardsBot {
 
         context.sendActivity(mainConversation[mainIndex]);
         mainIndex++;
-        return;
+        
 
-        /*
+        
         // See https://aka.ms/about-bot-activity-message to learn more about the message and other activity types.
         if (context.activity.type === 'message') {
-            const randomlySelectedCard = CARDS[Math.floor((Math.random() * CARDS.length - 1) + 1)];
+            console.log(JSON.stringify(context.activity));
+            const randomlySelectedCard = CARDS[1];
             await context.sendActivity({
                 text: 'Here is an Adaptive Card:',
                 attachments: [CardFactory.adaptiveCard(randomlySelectedCard)]
@@ -59,7 +60,7 @@ class AdaptiveCardsBot {
         } else {
             await context.sendActivity(`[${ context.activity.type } event detected]`);
         }
-        */
+        
     }
 }
 

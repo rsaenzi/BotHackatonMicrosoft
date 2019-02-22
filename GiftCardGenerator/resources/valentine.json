@@ -1,0 +1,42 @@
+{
+  "type": "AdaptiveCard",
+  "backgroundImage": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgNDQcHBw0HBwcHBw0HBwcHBw8IDQcNFREWFhURExMYHSggGBoxGxMTITEhJSkrLi4uFx8zODMsNygtLisBCgoKDQ0NDw0NDysZFRkrKys3LS0rKystLS0rKystKysrKysrLSsrKysrKysrKysrKy0rKystKysrKy0rKysrK//AABEIAMIBAwMBIgACEQEDEQH/xAAYAAEBAQEBAAAAAAAAAAAAAAABAAIDB//EABYQAQEBAAAAAAAAAAAAAAAAAAABEf/EABkBAAMBAQEAAAAAAAAAAAAAAAABAgMEBv/EABgRAQEBAQEAAAAAAAAAAAAAAAABERIC/9oADAMBAAIRAxEAPwDyxFOB6/EsKI8WLDhwKwYsOHCVgw4cOBUgxY1iwlTyMWNYsJXIxYcOA+WcWNYsA5YxY1iwy5ZwY3gwFyxiawYabGcGN4AixkNYDTYyGgabAiAnECgGkUTTEUSVICcOBUgw4ThLkBw4cJcjOHDhwlSDFjWHArlnFjWLCPlnFjWLBo5ZwY3iwy5YwY3gwFfLGDG8GGi+WMGN2A0WMBsYaLGQ0DRYyGgE4EcQLGiiTaQGEkqQYYpGoSpBIcOEmkgw4ZDhLnkYcOHAueRhxrFhLnlnDjWLAfLOLGsWAcsYsbwYC5YwY3YMNN8sYMbwWGi+WMZxuwWGzsYsFbsZNnYyGhTRYyGgEWBFGWNFFLaRFElSLDIpDhLkTUikMhNJFIcMhwmsikOI4S5BhOHAqQYsOHCVjOLGsWGMZwY1iBYxgxvBgRYxYLG2bDRYxRW7GabOxiitUVTKxgNChnYzQ0FIsCKBY0UUtpEYoSVIo0oYTSRRqKQyE1kUakUMJpIsKhwlyLDhQXIMOFYFYFhQGM4LGwE2MYmsFhpsYsDdZsDOxixmulZps7GKzW6zYplYxQ3WTZWMhoGiwYkgnGyiltIjFCTSQwxRqE0kUagjUJpIoYo1CayKFQkuRFELwIkHgDQAwBoAsZFaFNFjNZrdZps7GazW6zQzsYrNbrNUysZrLdZpsrGQ0DRYyignGyjEtpEUYTSQxqCGE0kMKhhNJDDFDCaSGGAk0hKQVEijPAigMAKBMhoU01ms1qihnYzWa1WabKs1mt1mmysZrLVFNnYyCDZ2BFBONlFLeRFGEuRRqAwmkMagMJpC0ISaQmAwLhIhC4ikDQKMAEUJoFICaKzWhTZ1ms1qs02dZorVZoZVms1usmzsZDVBs7AlhMsbKKG8iIMCpCYCS4Y1BCTSEgwmkLTLQXEQQqFJA0kgACDKoFkIoFNFCKzRWqzTZ1mhqsmzrNFaops7GRWgaLGSiE42ikOiRFEHIiCFwwgkuEgkuFpkhUJBC0QgCEgECDIA0BNApooRRWa1WabOiikGihmtAIsZRRosZRQLHRFJb4kiSkQQchhBJcRSCoSCFQoEKKCBlBAkkASBBkAQEUUEU0UAgIoDQNNjKKCcZRQGOiOJLbAUQeAokrEkQaIIUiCDRCBlJA0kgEEgQSQSAQZUIgIoBQTYyiDTgRQLBiKAxupJLZEIApIGUkDJSBpJA0UgaSQCBQASQIJIyCSBBBBKoSBVAo0hJAkUgH//2Q==",
+  "body": [
+      {
+          "type": "ColumnSet",
+          "columns": [
+              {
+                  "type": "Column",
+                  "items": [
+                      {
+                          "type": "Image",
+                          "url": "https://www.america-retail.com/static//2019/02/san-valentin.jpg",
+                          "size": "Stretch"
+                      }
+                  ],
+                  "width": 35
+              },
+              {
+                  "type": "Column",
+                  "items": [
+                      {
+                          "type": "TextBlock",
+                          "size": "Large",
+                          "weight": "Bolder",
+                          "color": "Light",
+                          "text": "You are my valentine Rigo"
+                      }
+                  ],
+                  "width": 65
+              }
+          ]
+      },
+      {
+          "type": "Image",
+          "url": "http://as01.epimg.net/betech/imagenes/2018/02/13/portada/1518538162_788061_1518538233_noticia_normal.jpg"
+      }
+  ],
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "version": "1.0",
+  "speak": "<s>Weather forecast for Monday is high of 62 and low of 42 degrees with a 20% chance of rain</s><s>Winds will be 5 mph from the northeast</s>"
+}
